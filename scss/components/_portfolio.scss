@@ -1,0 +1,39 @@
+.portfolio {
+  text-align: center;
+  background-color: #F3F3F3;
+  &__title {
+    padding-top: 80px;
+    margin-bottom: 50px;
+  }
+  &__card {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 80px;
+  }
+  &__img img {
+    filter: grayscale(100%);
+  }
+  &__img img:hover {
+    filter: none;
+  }
+  &__btn {
+    color: #F3F3F3;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: #E0196C;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    left: 236px;
+  }
+  .active {
+    display: none;
+  }
+}

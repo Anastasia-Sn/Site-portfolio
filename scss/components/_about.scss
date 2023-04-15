@@ -1,0 +1,29 @@
+.about {
+  display: flex;
+  height: 800px;
+  background: #FFFFFF;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  &__box {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 165%;
+    color: #626262;
+  }
+  &__photo {
+    margin-top: 100px;
+  }
+}

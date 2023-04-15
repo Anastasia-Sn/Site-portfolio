@@ -1,0 +1,36 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1300px;
+  padding: 0 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4689AF;
+}
+.title {
+  font-weight: 800;
+  font-size: 48px;
+  color: #4689AF;
+}
+.rose {
+  color: #E0196C;
+}
+.skills {
+  background-color: #4689AF;
+}
+.skills img {
+  width: 100%;
+}
+.topbutton {
+  position: fixed;
+  right: 60px;
+  bottom: 40px;
+  z-index: 5;
+}
+

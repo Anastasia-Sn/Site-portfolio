@@ -1,0 +1,45 @@
+.contact {
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__sub {
+    font-weight: 600;
+    font-size: 24px;
+    color: #626262;
+    margin-bottom: 10px;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 30px;
+    color: #4689AF;
+    margin-bottom: 35px;
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  &__link {
+    color: #E95E98;
+  }
+  &__link:hover {
+    color: #E0196C;
+    transition: 0.5s;
+  }
+}
+

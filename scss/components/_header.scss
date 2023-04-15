@@ -1,0 +1,31 @@
+.header {
+  height: 60px;
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.menu {
+  &__link {
+    font-size: 20px;
+    font-weight: 700;
+    color: #626262;
+  }
+  &__link:not(:last-child) {
+    padding-right: 85px;
+  }
+  &__link:hover {
+    color: #E0196C;
+    transition: 0.5s;
+  }
+}
+
