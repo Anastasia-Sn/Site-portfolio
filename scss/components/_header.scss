@@ -20,12 +20,16 @@
     font-weight: 700;
     color: #626262;
   }
-  &__link:not(:last-child) {
-    padding-right: 85px;
-  }
   &__link:hover {
     color: #E0196C;
     transition: 0.5s;
+  }
+  & ul {
+    display: flex;
+  }
+
+  & ul li:not(:last-child) {
+    padding-right: 85px;
   }
 }
 

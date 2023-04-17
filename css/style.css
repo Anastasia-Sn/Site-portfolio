@@ -145,13 +145,18 @@ body {
   font-weight: 700;
   color: #626262;
 }
-.menu__link:not(:last-child) {
-  padding-right: 85px;
-}
 .menu__link:hover {
   color: #E0196C;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.menu ul li:not(:last-child) {
+  padding-right: 85px;
 }
 
 .hero-page {
