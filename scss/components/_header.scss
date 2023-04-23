@@ -8,22 +8,26 @@
   left: 0;
   top: 0;
   z-index: 5;
+
   &__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
+
 .menu {
   &__link {
     font-size: 20px;
     font-weight: 700;
     color: #626262;
   }
+
   &__link:hover {
     color: #E0196C;
     transition: 0.5s;
   }
+
   & ul {
     display: flex;
   }
@@ -33,3 +37,109 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .header .menu {
+    display: none;
+  }
+}
+
+// burger menu 
+
+.burger-menu {
+  display: none;
+  left: 50px;
+  position: absolute;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  &__list {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: .5s;
+  }
+
+  &__item {
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    color: #626262;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  &__link:active {
+    color: #E0196C;
+  }
+
+  &__button {
+    background-color: #eaeaea;
+    padding: 5px 40px;
+    font-size: 22px;
+  }
+
+  &__button:active {
+    background: #E0196C;
+    color: #eaeaea;
+  }
+
+  &__btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    z-index: 5;
+    right: 30px;
+    top: 10px;
+    position: fixed;
+
+    &--active {
+      span {
+        position: absolute;
+      }
+
+      span:nth-child(1) {
+        transform: rotate(45deg);
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+
+      span:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+
+      &+.burger-menu__list {
+        transform: translateY(0);
+      }
+    }
+
+    span {
+      height: 2px;
+      width: 60%;
+      background-color: #4689AF;
+      transition: 0.5s;
+    }
+
+    &--active span {
+      background-color: #4689AF;
+    }
+  }
+}

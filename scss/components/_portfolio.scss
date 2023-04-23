@@ -6,9 +6,12 @@
     margin-bottom: 50px;
   }
   &__card {
+    border-radius: 30px;
     position: relative;
     display: flex;
     align-items: center;
+    overflow: hidden;
+    filter: grayscale(100%);
   }
   &__img {
     display: flex;
@@ -17,11 +20,15 @@
     gap: 40px;
     padding-bottom: 80px;
   }
-  &__img img {
-    filter: grayscale(100%);
-  }
-  &__img img:hover {
+  &__card:hover {
     filter: none;
+  }
+  &__card img {
+    transition: transform 400ms ease-out;
+  }
+  &__card:hover img {
+    transform: scale(1.15);
+    transition: .3s ease-out;
   }
   &__btn {
     color: #F3F3F3;
@@ -31,9 +38,14 @@
     font-size: 20px;
     font-weight: 600;
     position: absolute;
-    left: 236px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 450%);
+    transition: .4s ease-out;
+    z-index: 20;
   }
-  .active {
-    display: none;
+  &__card:hover &__btn {
+    display: block;
+    transform: translate(-50%, -50%);
   }
 }
