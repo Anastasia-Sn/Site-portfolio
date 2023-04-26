@@ -39,3 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ? console.log(`You spend ${hours} hour here on average`)
     : console.log(`You spend ${hours} hours here on average`);
 });
+
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+}
